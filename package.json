@@ -1,12 +1,12 @@
 {
   "name": "greeting-app",
   "version": "1.0.0",
-  "description": "",
   "main": "greetingApp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx cypress run --headless",
     "start": "node server.js",
-    "test:selenium": "node test/test.spec.js"
+    "test:selenium": "node test/test.spec.js",
+    "cypress:open": "cypress open"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +16,9 @@
   },
   "devDependencies": {
     "chromedriver": "^122.0.4",
+    "cypress": "^13.6.6",
     "mocha": "^10.3.0",
     "selenium-webdriver": "^4.18.1"
-  }
+  },
+  "description": ""
 }
